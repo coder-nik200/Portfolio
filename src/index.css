@@ -1,0 +1,210 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "Playfair Display", "Lora", Georgia, serif;
+  --font-lora: "Lora", "Playfair Display", Georgia, serif;
+  --font-syne: "Syne", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-bg-dark: #F5F2ED;
+  --color-surface-dim: #EBE7DF;
+  --color-surface-bright: #FFFFFF;
+  --color-surface-container-lowest: #FAF9F6;
+  --color-surface-container-low: #F0EDE6;
+  --color-surface-container: #E7E3D9;
+  --color-surface-container-high: #DDD9CF;
+  --color-surface-container-highest: #D0CCC1;
+
+  --color-on-surface: #1A1A1A;
+  --color-on-surface-variant: #444444;
+  --color-inverse-surface: #1A1A1A;
+  --color-inverse-on-surface: #F5F2ED;
+  --color-outline: #1A1A1A;
+  --color-outline-variant: #555555;
+  --color-surface-tint: #1A1A1A;
+
+  --color-primary: #1A1A1A;
+  --color-on-primary: #FFFFFF;
+  --color-primary-container: #E7E3D9;
+  --color-on-primary-container: #1A1A1A;
+  --color-inverse-primary: #FFFFFF;
+
+  --color-secondary: #5C5243;
+  --color-on-secondary: #FFFFFF;
+  --color-secondary-container: #DDD9CF;
+  --color-on-secondary-container: #1A1A1A;
+
+  --color-tertiary: #A63F2C;
+  --color-on-tertiary: #FFFFFF;
+  --color-tertiary-container: #F0EDE6;
+  --color-on-tertiary-container: #A63F2C;
+
+  --color-error: #BA1A1A;
+  --color-on-error: #FFFFFF;
+  --color-error-container: #FFDAD6;
+  --color-on-error-container: #410002;
+}
+
+/* Base resets & configurations */
+body {
+  background-color: #F5F2ED;
+  color: #1A1A1A;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Editorial Spec Card Styles (Replacing neon/glow interfaces with newspaper cards) */
+.glass-card {
+  background: #FCFAF7;
+  border: 1px solid #1A1A1A;
+  box-shadow: 2px 2px 0px rgba(26, 26, 26, 0.15);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  border-color: #1A1A1A;
+  background: #FFFFFF;
+  box-shadow: 5px 5px 0px #1A1A1A;
+  transform: translate(-3px, -3px);
+}
+
+/* Crisp Editorial Nav */
+.glass-nav {
+  background: rgba(253, 252, 250, 0.96);
+  border: 1px solid #1A1A1A;
+  box-shadow: 0 4px 20px rgba(26, 26, 26, 0.08);
+}
+
+/* Clean Editorial Underlines and High Contrast Headers */
+.text-glow {
+  text-shadow: none;
+}
+
+.text-glow-purple {
+  text-shadow: none;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animated-float {
+  animation: float 8s ease-in-out infinite;
+}
+
+.animated-float-slow {
+  animation: float 11s ease-in-out infinite;
+}
+
+.animated-float-delay {
+  animation: float 9s ease-in-out infinite;
+  animation-delay: -3.5s;
+}
+
+/* Parallax backgrounds tailored for Editorial sepia atmosphere */
+.parallax-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.orb {
+  position: absolute;
+  filter: blur(160px);
+  opacity: 0.05;
+  border-radius: 50%;
+}
+
+.orb-blue {
+  background: #A63F2C;
+  width: 650px;
+  height: 650px;
+  top: -100px;
+  right: -100px;
+  animation: orb-move-1 30s ease-in-out infinite alternate;
+}
+
+.orb-violet {
+  background: #5C5243;
+  width: 550px;
+  height: 550px;
+  bottom: -100px;
+  left: -200px;
+  animation: orb-move-2 25s ease-in-out infinite alternate;
+}
+
+.orb-orange {
+  background: #D0CCC1;
+  width: 450px;
+  height: 450px;
+  top: 35%;
+  left: 30%;
+  opacity: 0.03;
+  filter: blur(180px);
+}
+
+@keyframes orb-move-1 {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  100% {
+    transform: translate(-60px, 80px) scale(1.1);
+  }
+}
+
+@keyframes orb-move-2 {
+  0% {
+    transform: translate(0px, 0px) scale(1.05);
+  }
+  100% {
+    transform: translate(80px, -60px) scale(0.95);
+  }
+}
+
+/* CSS Scrollbar for Editorial Theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F2ED;
+}
+::-webkit-scrollbar-thumb {
+  background: #DDD9CF;
+  border-radius: 0px; /* Editorial theme uses sharp edges */
+  border: 1px solid #1A1A1A;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1A1A1A;
+}
+
+/* Material Symbols Adjustments */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'liga';
+}
