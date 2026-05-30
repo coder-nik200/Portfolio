@@ -1,63 +1,65 @@
-Portfolio
+# 👋 Hey, I'm Nitish
 
-Overview:
-This is my personal portfolio website built to showcase my skills, projects, and experience as a developer. It is designed with a clean UI, responsive layout, and smooth user experience.
+🚀 Frontend Developer | React Enthusiast | UI Designer
 
-Tech Stack:
-React (Vite)
-Tailwind CSS
-JavaScript or TypeScript
-Framer Motion for animations
-GitHub API for live stats (if used)
+I build modern, responsive, and performance-focused web applications with clean UI and smooth UX.
 
-Features:
-Responsive design for mobile, tablet, and desktop
-Smooth animations and transitions
-Projects section with live links and GitHub repositories
-About section with skills and experience
-Contact section for direct communication
-GitHub activity or stats integration (if added)
-Dark and light mode support (if implemented)
+---
 
-Project Structure:
-src/
-components/
-pages/
-assets/
-data/
-hooks/
-styles/
-App.jsx
+## 🧠 About Me
 
-Installation and Setup:
+- 💻 Passionate about Web Development & UI Engineering
+- ⚛️ Working mainly with React, Vite, and Tailwind CSS
+- 🎯 Focused on building real-world, production-ready projects
+- 📚 Currently improving system design + frontend architecture skills
+- 🌍 Based in India
 
-Clone the repository:
-git clone https://github.com/your-username/your-portfolio.git
+---
 
-Go to project folder:
-cd your-portfolio
+## 🛠️ Tech Stack
 
-Install dependencies:
-npm install
+Frontend:
+- React.js
+- Vite
+- Tailwind CSS
+- JavaScript (ES6+)
 
-Run development server:
-npm run dev
+Tools:
+- Git & GitHub
+- VS Code
+- Figma
+- REST APIs
 
-Build for production:
-npm run build
+---
 
-Environment Variables:
-If GitHub API or other services are used, create a .env file like this:
+## 📌 Featured Projects
 
-VITE_GITHUB_TOKEN=your_token_here
+### 🔹 Portfolio Website
+Modern personal portfolio with animations and responsive design.
 
-Live Demo:
-https://your-portfolio-link.com
+### 🔹 GitHub Stats Dashboard
+Live GitHub data visualization with commit heatmap and analytics.
 
-Contact:
-Email: yourmail@example.com
-GitHub: https://github.com/your-username
-LinkedIn: https://linkedin.com/in/your-profile
+### 🔹 Task Manager App
+A minimal productivity app with CRUD features and local storage.
 
-License:
-This project is open source and available under the MIT License
+---
+
+
+---
+
+## 📫 Contact Me
+
+- Email: yourmail@example.com
+- GitHub: https://github.com/yourusername
+- LinkedIn: https://linkedin.com/in/yourprofile
+
+---
+
+## ⚡ Fun Fact
+
+I turn coffee ☕ into code and ideas into real products.
+
+---
+
+⭐ If you like my work, consider giving a star to my repositories!
