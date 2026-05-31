@@ -28,7 +28,8 @@ export default function About() {
                 className="w-full h-full object-cover grayscale brightness-95 hover:grayscale-0 hover:brightness-100 transition-all duration-700"
                 alt="Portrait of Nitish Bharti"
                 referrerPolicy="no-referrer"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9_wFdfwAA0Ymu6q2gU0g--K_-93Zi3LZ26TNdHNCRs6ESw8uzULmkC3xoYwLe0rABgUDDJlAdeAMGJW5aoskk7g28Fo9PxZL4trCSr96n-qHv-Ejsfvk26bY_AfKue3Rd4MUTUYDvwtE4P_Akst-FxWCRrk9-NxPrNevbYiMqO7sGInWaQH0ttja-07dpyKZ3G0mjhWvdzyKmeL3RfzB56usPLueq3vThF8mr9KowVPdZA33cc273s6x9ZtmZb3erVr-3Gf6MJQ"
+                src="/Nitish.jpeg"
+
               />
             </div>
 

@@ -61,8 +61,8 @@ export const personalData = {
       ],
       techStack: ["React", "TypeScript", "Tailwind CSS", "Firebase", "Node.js"],
       liveDemo: "https://nexoraai17.netlify.app/",
-      githubUrl: "https://github.com/coder-nik200",
-      imageUrl: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800&auto=format&fit=crop"
+      githubUrl: "https://github.com/coder-nik200/Nexore-AI",
+      imageUrl: "/image1.png"
     },
     {
       id: "study-hub",
@@ -79,8 +79,8 @@ export const personalData = {
       ],
       techStack: ["React", "Tailwind CSS", "Firebase", "JavaScript", "Node.js"],
       liveDemo: "https://nexoraai17.netlify.app/",
-      githubUrl: "https://github.com/coder-nik200",
-      imageUrl: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800&auto=format&fit=crop"
+      githubUrl: "https://github.com/coder-nik200/study_hub-18",
+      imageUrl: "/image2.png"
     },
     {
       id: "portfolio-3d",

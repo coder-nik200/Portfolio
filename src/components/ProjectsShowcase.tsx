@@ -51,7 +51,7 @@ export default function ProjectsShowcase() {
 
                 <div className="relative aspect-video overflow-hidden border border-on-surface/30">
                   <img
-                    className="w-full h-full object-cover grayscale contrast-110 hover:grayscale-0 transition-all duration-700"
+                    className="w-full h-full object-contain grayscale contrast-110 hover:grayscale-0 transition-all duration-700"
                     alt={project.name}
                     src={project.imageUrl}
                   />
