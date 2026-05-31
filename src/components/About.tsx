@@ -25,20 +25,11 @@ export default function About() {
         {/* Profile Image Column (framed with a crisp thin border) */}
         <div className="lg:col-span-5 relative">
           <div className="relative border border-on-surface p-2.5 bg-[#FAF9F6] shadow-sm">
-            <div
-              onClick={() => {
-                if (window.innerWidth < 768) {
-                  setGlow(!glow);
-                }
-              }}
-              className={`aspect-square overflow-hidden border bg-white transition-all duration-500 ${glow
-                  ? "shadow-[0_0_40px_rgba(255,255,255,0.9)] border-white"
-                  : "border-on-surface/40"
-                }`}
-            >
+            <div className="aspect-square overflow-hidden border border-on-surface/40 bg-white">
               <img
-                className="w-full h-full object-cover grayscale brightness-95 hover:grayscale-0 hover:brightness-100 transition-all duration-700"
+                className="w-full h-full object-cover md:grayscale md:brightness-95 md:hover:grayscale-0 md:hover:brightness-100 transition-all duration-700"
                 alt="Portrait of Nitish Bharti"
+                referrerPolicy="no-referrer"
                 src="/Nitish.jpeg"
               />
             </div>
