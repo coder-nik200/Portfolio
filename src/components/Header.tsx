@@ -54,8 +54,8 @@ export default function Header({ onScrollTo }: HeaderProps) {
   return (
     <nav
       className={`fixed top-0 left-1/2 -translate-x-1/2 z-50 flex items-center justify-between px-3 sm:px-6 py-3 w-[98%] sm:w-[94%] md:w-[88%] max-w-5xl transition-all duration-400 ${scrolled
-          ? 'glass-nav mt-2 border border-on-surface rounded-none'
-          : 'bg-transparent border-b border-on-surface/20 mt-4 rounded-none'
+        ? 'glass-nav mt-2 border border-on-surface rounded-none'
+        : 'bg-transparent border-b border-on-surface/20 mt-4 rounded-none'
         }`}
       id="custom-navbar"
     >
@@ -64,8 +64,12 @@ export default function Header({ onScrollTo }: HeaderProps) {
         className="flex items-center gap-2 sm:gap-3 cursor-pointer flex-shrink-0"
         onClick={() => onScrollTo('hero')}
       >
-        <div className="flex items-center justify-center w-8 h-8 rounded-none bg-primary text-on-primary font-serif italic font-black text-lg border border-primary">
-          N
+        <div className="relative flex items-center justify-center w-8 h-8 rounded-none bg-primary text-on-primary border border-primary overflow-hidden">
+          <img
+            src="/logo.png"
+            alt="Logo"
+            className="w-full h-full object-cover"
+          />
         </div>
       </div>
 
@@ -77,8 +81,8 @@ export default function Header({ onScrollTo }: HeaderProps) {
               key={item.id}
               onClick={() => onScrollTo(item.id)}
               className={`px-2 sm:px-3 py-1 rounded-none text-[10px] sm:text-sm font-sans font-semibold transition-all duration-350 relative uppercase tracking-wider whitespace-nowrap ${activeSegment === item.id
-                  ? 'text-primary'
-                  : 'text-on-surface-variant/80 hover:text-on-surface'
+                ? 'text-primary'
+                : 'text-on-surface-variant/80 hover:text-on-surface'
                 }`}
             >
               {item.label}
