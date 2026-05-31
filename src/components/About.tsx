@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { personalData } from '../data';
 
 export default function About() {
+  const [glow, setGlow] = useState(false);
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -23,11 +25,16 @@ export default function About() {
         {/* Profile Image Column (framed with a crisp thin border) */}
         <div className="lg:col-span-5 relative">
           <div className="relative border border-on-surface p-2.5 bg-[#FAF9F6] shadow-sm">
-            <div className="aspect-square overflow-hidden border border-on-surface/40 bg-white transition-all duration-300 active:shadow-[0_0_30px_rgba(255,255,255,0.8)] active:border-white md:active:shadow-none">
+            <div
+              onClick={() => setGlow(!glow)}
+              className={`aspect-square overflow-hidden border bg-white transition-all duration-500 ${glow
+                  ? "shadow-[0_0_40px_rgba(255,255,255,0.9)] border-white"
+                  : "border-on-surface/40"
+                }`}
+            >
               <img
-                className="w-full h-full object-cover grayscale brightness-95 hover:grayscale-0 hover:brightness-100 transition-all duration-700 active:grayscale-0 active:brightness-100"
+                className="w-full h-full object-cover grayscale brightness-95 hover:grayscale-0 hover:brightness-100 transition-all duration-700"
                 alt="Portrait of Nitish Bharti"
-                referrerPolicy="no-referrer"
                 src="/Nitish.jpeg"
               />
             </div>
