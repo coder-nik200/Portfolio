@@ -93,7 +93,7 @@ export default function Hero({ onScrollTo }: HeroProps) {
           className="flex flex-col sm:flex-row gap-5 justify-center items-center max-w-xl mx-auto"
         >
           <button
-            onClick={() => onScrollTo('projects')}
+            onClick={() => onScrollTo('experience')}
             className="group relative overflow-hidden w-full sm:w-auto px-12 py-4 bg-[#111111] text-white font-mono text-[11px] uppercase tracking-[0.25em] font-bold border border-black hover:scale-[1.02] active:scale-[0.98] transition-all duration-500 shadow-[0_10px_40px_rgba(0,0,0,0.15)]"
           >
             <span className="relative z-10">Explore Portfolio</span>

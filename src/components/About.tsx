@@ -23,13 +23,12 @@ export default function About() {
         {/* Profile Image Column (framed with a crisp thin border) */}
         <div className="lg:col-span-5 relative">
           <div className="relative border border-on-surface p-2.5 bg-[#FAF9F6] shadow-sm">
-            <div className="aspect-square overflow-hidden border border-on-surface/40 bg-white">
+            <div className="aspect-square overflow-hidden border border-on-surface/40 bg-white transition-all duration-300 active:shadow-[0_0_30px_rgba(255,255,255,0.8)] active:border-white md:active:shadow-none">
               <img
-                className="w-full h-full object-cover grayscale brightness-95 hover:grayscale-0 hover:brightness-100 transition-all duration-700"
+                className="w-full h-full object-cover grayscale brightness-95 hover:grayscale-0 hover:brightness-100 transition-all duration-700 active:grayscale-0 active:brightness-100"
                 alt="Portrait of Nitish Bharti"
                 referrerPolicy="no-referrer"
                 src="/Nitish.jpeg"
-
               />
             </div>
 
