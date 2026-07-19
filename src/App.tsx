@@ -81,7 +81,7 @@ export default function App() {
         <ExperienceTimeline />
 
         {/* 5. PROJECTS SECTION */}
-        {/* <ProjectsShowcase /> */}
+        <ProjectsShowcase />
 
         {/* 8. LANGUAGES, HOBBIES, & OBJECTIVES SECTIONS */}
         <HobbiesAndGoals />

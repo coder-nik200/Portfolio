@@ -1,4 +1,11 @@
-import { Project, SkillCategory, Experience, Certification, Service, Testimonial } from './types';
+import {
+  Project,
+  SkillCategory,
+  Experience,
+  Certification,
+  Service,
+  Testimonial,
+} from "./types";
 
 export const personalData = {
   name: "Nitish Bharti",
@@ -6,10 +13,12 @@ export const personalData = {
   roles: [
     "Full Stack Developer",
     "Frontend Developer",
-    "AI Workflow Developer"
+    "AI Workflow Developer",
   ],
-  shortIntro: "Passionate developer focused on building modern web applications, AI-powered platforms, and premium user experiences. Interested in scalable systems, clean UI/UX, automation, and real-world problem solving.",
-  aboutMe: "Started as a curious learner exploring technology and programming, and now growing into a passionate developer focused on building modern web applications, AI-based platforms, and creative digital experiences. Constantly learning, improving, and turning ideas into real-world projects through hands-on development.",
+  shortIntro:
+    "Passionate developer focused on building modern web applications, AI-powered platforms, and premium user experiences. Interested in scalable systems, clean UI/UX, automation, and real-world problem solving.",
+  aboutMe:
+    "Started as a curious learner exploring technology and programming, and now growing into a passionate developer focused on building modern web applications, AI-based platforms, and creative digital experiences. Constantly learning, improving, and turning ideas into real-world projects through hands-on development.",
 
   education: {
     qualification: "BCA (Bachelor of Computer Applications)",
@@ -18,56 +27,94 @@ export const personalData = {
       "DevOps",
       "Full Stack Development",
       "AI Integrations",
-      "Cloud and Deployment"
-    ]
+      "Cloud and Deployment",
+    ],
   },
 
   skills: [
     {
       category: "Frontend",
-      skills: ["HTML", "CSS", "JavaScript", "TypeScript", "React.js", "Tailwind CSS", "Responsive Design", "Motion / Animations"]
+      skills: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "React.js",
+        "Tailwind CSS",
+        "Responsive Design",
+        "Motion / Animations",
+      ],
     },
     {
       category: "Backend",
-      skills: ["Node.js", "Express.js", "Firebase", "REST APIs", "Serverless Functions"]
+      skills: [
+        "Node.js",
+        "Express.js",
+        "Firebase",
+        "REST APIs",
+        "Serverless Functions",
+      ],
     },
     {
       category: "Database",
-      skills: ["MongoDB", "Firebase Firestore", "Local Storage", "IndexDB"]
+      skills: ["MongoDB", "Firebase Firestore", "Local Storage", "IndexDB"],
     },
     {
       category: "Tools & Platforms",
-      skills: ["Git", "GitHub", "VS Code", "Netlify", "Vercel", "Vite", "npm/pnpm"]
+      skills: [
+        "Git",
+        "GitHub",
+        "VS Code",
+        "Netlify",
+        "Vercel",
+        "Vite",
+        "npm/pnpm",
+      ],
     },
     {
       category: "Other Skills",
-      skills: ["Problem Solving", "Team Collaboration", "Technical Support", "Communication Skills", "UI/UX Prototyping"]
-    }
+      skills: [
+        "Problem Solving",
+        "Team Collaboration",
+        "Technical Support",
+        "Communication Skills",
+        "UI/UX Prototyping",
+      ],
+    },
   ] as SkillCategory[],
 
   projects: [
     {
-      id: "nexora-ai",
-      name: "Nexora AI",
-      description: "AI powered productivity and workflow platform for modern teams.",
+      id: "medicity",
+      name: "Medicity",
+      description:
+        "Medicity is an online pharmacy that lets users browse medicines, upload prescriptions, and order healthcare products with ease.",
       features: [
-        "AI workspace management",
-        "Smart automation tools",
-        "Responsive premium UI",
-        "Team collaboration system",
-        "Authentication system",
-        "Firebase integration",
-        "Modern dashboard"
+        "Medicine browsing",
+        "Prescription uploads",
+        "Shopping cart",
+        "Secure authentication",
+        "Order management",
+        "Responsive interface",
+        "Admin dashboard",
       ],
-      techStack: ["React", "TypeScript", "Tailwind CSS", "Firebase", "Node.js"],
-      liveDemo: "https://nexoraai17.netlify.app/",
-      githubUrl: "https://github.com/coder-nik200/Nexore-AI",
-      imageUrl: "/image1.png"
+      techStack: [
+        "React",
+        "JavaScript",
+        "Tailwind CSS",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+      ],
+      liveDemo: "https://medicity-frontend-zysc.vercel.app/",
+      githubUrl: "https://github.com/coder-nik200/Medicity.git",
+      imageUrl: "/image.png",
     },
     {
       id: "study-hub",
       name: "StudyHub",
-      description: "A modern online learning and study management platform designed for students to improve productivity and learning experience.",
+      description:
+        "A modern online learning and study management platform designed for students to improve productivity and learning experience.",
       features: [
         "Course management system",
         "Modern responsive UI",
@@ -75,68 +122,81 @@ export const personalData = {
         "Notes and resource section",
         "Authentication system",
         "Smooth user experience",
-        "Mobile responsive design"
+        "Mobile responsive design",
       ],
       techStack: ["React", "Tailwind CSS", "Firebase", "JavaScript", "Node.js"],
-      liveDemo: "https://nexoraai17.netlify.app/",
-      githubUrl: "https://github.com/coder-nik200/study_hub-18",
-      imageUrl: "/image2.png"
+      liveDemo: "https://study-frontend-pi.vercel.app/",
+      githubUrl: "https://github.com/coder-nik200/Study-Hub.git",
+      imageUrl: "/image2.png",
     },
     {
-      id: "portfolio-3d",
-      name: "3D Portfolio Website",
-      description: "A modern premium portfolio website with smooth animations, responsive design, and realistic interactions.",
+      id: "book-mart",
+      name: "BookMart",
+      description:
+        "BookMart is an online bookstore that allows users to discover books, manage their cart, save favorites, and place orders through a clean and user-friendly shopping experience.",
       features: [
-        "3D elements & depth effects",
-        "Smooth scrolling effects",
-        "Premium UI design",
-        "Mobile responsive layout",
-        "Interactive sections and particles"
+        "Book browsing",
+        "Advanced search & filters",
+        "Shopping cart",
+        "Wishlist",
+        "Secure authentication",
+        "Order management",
+        "Responsive design",
       ],
-      techStack: ["React", "Tailwind CSS", "Three.js (WebGL)", "JavaScript", "Motion"],
-      liveDemo: "https://nexoraai17.netlify.app/",
-      githubUrl: "https://github.com/coder-nik200",
-      imageUrl: "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?q=80&w=800&auto=format&fit=crop"
-    }
+      techStack: [
+        "React",
+        "JavaScript",
+        "Tailwind CSS",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+      ],
+      liveDemo: "https://book-mart-frontend.vercel.app/",
+      githubUrl: "https://github.com/coder-nik200/Book-Mart.git",
+      imageUrl: "/image3.png",
+    },
   ] as Project[],
 
   certifications: [
     {
       name: "Full Stack Software Development",
       issuer: "Architech Labs Training",
-      date: "Dec 2025"
+      date: "Dec 2025",
     },
     {
       name: "AI & Modern Workflow Automation Specialist",
       issuer: "Nexora AI Systems",
-      date: "Mar 2026"
+      date: "Mar 2026",
     },
     {
       name: "Advanced Responsive Frontend & Motion Design",
       issuer: "Dev Alliance Org",
-      date: "Oct 2025"
-    }
+      date: "Oct 2025",
+    },
   ] as Certification[],
 
   services: [
     {
       icon: "code",
       title: "Interactive Frontend Crafting",
-      description: "Delivering cinematic, fluid, and responsive user interfaces using React, TypeScript, and high-performance motion layers.",
-      tags: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"]
+      description:
+        "Delivering cinematic, fluid, and responsive user interfaces using React, TypeScript, and high-performance motion layers.",
+      tags: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     },
     {
       icon: "cloud",
       title: "Backend & Serverless Architectures",
-      description: "Configuring robust Node.js APIs, Firebase database schemas, and clean Firestore security rule validations.",
-      tags: ["Node.js", "Express", "Firebase", "REST APIs"]
+      description:
+        "Configuring robust Node.js APIs, Firebase database schemas, and clean Firestore security rule validations.",
+      tags: ["Node.js", "Express", "Firebase", "REST APIs"],
     },
     {
       icon: "smart_toy",
       title: "AI Workflows & Automations",
-      description: "Integrating LLM interfaces, automated work pipelines, smart system agents, and productivity metrics.",
-      tags: ["Gemini AI SDK", "Prompt Engineering", "API Proxy Routing"]
-    }
+      description:
+        "Integrating LLM interfaces, automated work pipelines, smart system agents, and productivity metrics.",
+      tags: ["Gemini AI SDK", "Prompt Engineering", "API Proxy Routing"],
+    },
   ] as Service[],
 
   testimonials: [
@@ -144,20 +204,20 @@ export const personalData = {
       name: "Anand Verma",
       role: "Lead Developer",
       company: "Architech Labs",
-      text: "Nitish demonstrated outstanding dedication during his 6-month internship. He picked up complex React and Firebase integration patterns at lightning speed and was instrumental in debugging critical deployment code."
+      text: "Nitish demonstrated outstanding dedication during his 6-month internship. He picked up complex React and Firebase integration patterns at lightning speed and was instrumental in debugging critical deployment code.",
     },
     {
       name: "Elena Rostova",
       role: "Product Owner",
       company: "Nexora Solutions",
-      text: "Nitish's passion for fine-grained motion design and robust system architectures sets him apart. He turned our initial concept into a highly responsive, polished interface that our clients absolutely love."
+      text: "Nitish's passion for fine-grained motion design and robust system architectures sets him apart. He turned our initial concept into a highly responsive, polished interface that our clients absolutely love.",
     },
     {
       name: "Rajesh Malhotra",
       role: "Technical Advisor",
       company: "StudyHub Creator Team",
-      text: "Nitish worked untiringly to ensure StudyHub had flawless responsiveness on smaller viewports. His attention to neat code organization and client-side logic optimization is pristine."
-    }
+      text: "Nitish worked untiringly to ensure StudyHub had flawless responsiveness on smaller viewports. His attention to neat code organization and client-side logic optimization is pristine.",
+    },
   ] as Testimonial[],
 
   languages: [
@@ -173,7 +233,7 @@ export const personalData = {
     "UI/UX Designing",
     "Gaming",
     "Problem Solving",
-    "Cricket"
+    "Cricket",
   ],
 
   careerGoals: [
@@ -181,7 +241,7 @@ export const personalData = {
     "Master DSA and problem solving",
     "Learn advanced DevOps and cloud technologies",
     "Build scalable AI products",
-    "Work on real-world impactful projects"
+    "Work on real-world impactful projects",
   ],
 
   contacts: {
@@ -190,6 +250,6 @@ export const personalData = {
     github: "https://github.com/coder-nik200",
     linkedin: "https://www.linkedin.com/in/nitish-kumar-bharti-631a37359/",
     twitter: "https://x.com/code_Bharti07",
-    instagram: "https://www.instagram.com/wohh.nitish"
-  }
+    instagram: "https://www.instagram.com/wohh.nitish",
+  },
 };

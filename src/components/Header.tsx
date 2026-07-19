@@ -47,7 +47,7 @@ export default function Header({ onScrollTo }: HeaderProps) {
     { label: 'About', id: 'about' },
     { label: 'Skills', id: 'skills' },
     { label: 'Experience', id: 'experience' },
-    // { label: 'Projects', id: 'projects' },
+    { label: 'Projects', id: 'projects' },
     { label: 'Contact', id: 'contact' },
   ];
 
