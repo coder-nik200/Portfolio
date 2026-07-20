@@ -17,7 +17,7 @@ export default function Header({ onScrollTo }: HeaderProps) {
         'about',
         'skills',
         'experience',
-        // 'projects',
+        'projects',
         'contact',
       ];
 
