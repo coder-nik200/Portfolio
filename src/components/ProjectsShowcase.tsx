@@ -153,7 +153,7 @@ export default function ProjectsShowcase() {
                 className="relative h-28 sm:h-44 bg-cover bg-center border-b border-on-surface"
                 style={{ backgroundImage: `url(${activeProject.imageUrl})` }}
               >
-                <div className="absolute inset-0 bg-linear-to-t from-white via-white/40 to-black/30" />
+                <div className="absolute inset-0 bg-white/10" />
                 <button
                   onClick={() => setActiveProject(null)}
                   className="absolute top-4 right-4 h-8 w-8 rounded-none bg-white border border-on-surface text-on-surface flex items-center justify-center hover:bg-neutral-100 transition-colors cursor-pointer shadow-md"
@@ -163,11 +163,11 @@ export default function ProjectsShowcase() {
                   </span>
                 </button>
 
-                <div className="absolute bottom-4 left-6">
-                  <span className="font-[#1A1A1A] text-[9px] uppercase tracking-[0.2em] bg-[#FAF9F6] px-2 py-0.5 border border-on-surface font-mono leading-none font-bold block w-fit shadow-xs mb-1.5">
+                <div className="absolute bottom-3 left-4 sm:bottom-4 sm:left-6">
+                  <span className="font-[#1A1A1A] text-[9px] uppercase tracking-[0.2em] bg-white/90 px-2 py-0.5 border border-on-surface font-mono leading-none font-bold block w-fit shadow-xs mb-1.5">
                     Detailed Scope
                   </span>
-                  <h3 className="font-serif italic text-2xl sm:text-3xl font-extrabold text-[#111111]">
+                  <h3 className="font-serif italic text-xl sm:text-3xl font-extrabold text-white drop-shadow-lg">
                     {activeProject.name}
                   </h3>
                 </div>
